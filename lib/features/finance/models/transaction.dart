@@ -4,6 +4,7 @@
    final String reason;
    final DateTime date;
    final bool isIncome;
+   final String photoURL;
 
    Transaction({
     required this.name,
@@ -11,5 +12,6 @@
      required this.reason,
      required this.date,
      required this.isIncome,
+     required this.photoURL
    });
  }

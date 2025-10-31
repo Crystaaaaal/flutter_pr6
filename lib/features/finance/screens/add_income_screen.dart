@@ -60,6 +60,7 @@ class _AddIncomeScreenState extends State<AddIncomeScreen> {
                           reason: _reason,
                           date: DateTime.now(),
                           isIncome: true,
+                            photoURL: "https://png.pngtree.com/png-vector/20191118/ourmid/pngtree-coins-icon-creative-design-template-png-image_1998330.jpg"
                         );
 
                         Navigator.pop(context, transaction);

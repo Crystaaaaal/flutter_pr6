@@ -66,6 +66,7 @@ class _AddExpenseScreenState extends State<AddExpenseScreen> {
                           reason: _reason,
                           date: DateTime.now(),
                           isIncome: false,
+                          photoURL: "https://cdn-icons-png.flaticon.com/512/9516/9516351.png"
                         );
 
                         Navigator.pop(context, transaction);

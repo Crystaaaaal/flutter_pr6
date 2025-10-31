@@ -52,7 +52,6 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
 
-    // Стартовые расходы
     final initialExpenses = [
       Transaction(
         name: 'Продукты',
@@ -60,6 +59,7 @@ class _MyAppState extends State<MyApp> {
         reason: 'Покупка еды в супермаркете',
         date: DateTime.now().subtract(const Duration(days: 1)),
         isIncome: false,
+          photoURL: "https://images.thevoicemag.ru/upload/img_cache/493/493173ba9d947eb9624440f06237437e_cropped_666x444.jpg",
       ),
       Transaction(
         name: 'Транспорт',
@@ -67,10 +67,10 @@ class _MyAppState extends State<MyApp> {
         reason: 'Проезд на автобусе',
         date: DateTime.now(),
         isIncome: false,
+          photoURL: "https://www.shutterstock.com/image-vector/transport-travel-car-train-bus-600w-506212144.jpg",
       ),
     ];
 
-    // Стартовые доходы
     final initialIncomes = [
       Transaction(
         name: 'Зарплата',
@@ -78,6 +78,8 @@ class _MyAppState extends State<MyApp> {
         reason: 'Основная работа',
         date: DateTime.now().subtract(const Duration(days: 3)),
         isIncome: true,
+          photoURL: "https://img.gazeta.ru/files3/705/16249705/vkonvertr-pic_32ratio_1200x800-1200x800-79503.jpg",
+
       ),
       Transaction(
         name: 'Фриланс',
@@ -85,10 +87,10 @@ class _MyAppState extends State<MyApp> {
         reason: 'Проект по дизайну',
         date: DateTime.now().subtract(const Duration(days: 2)),
         isIncome: true,
+          photoURL: "https://cdn-icons-png.flaticon.com/512/1807/1807705.png"
       ),
     ];
 
-    // Добавляем стартовые элементы через методы
     for (var income in initialIncomes) {
       _addIncome(income);
     }
